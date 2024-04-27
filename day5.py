@@ -52,3 +52,36 @@ fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 # The Syntax
 # newlist = [expression for item in iterable if condition == True]
 
+
+# Python - Sort Lists
+# Sort List Alphanumerically -> sort() method that will sort the list alphanumerically, ascending, by default
+
+thislist = ["Orange", "mango", "apple", "kiwi", "pineapple", "Banana"]
+# thislist = [100, 50, 65, 82, 23]
+# thislist.sort()         
+# thislist.sort(reverse = True)  # Sort Descending
+# thislist.sort(key = str.lower)         
+# thislist.reverse()
+# print(thislist)
+
+
+# Python - Copy Lists
+country_list = ["India", "United States", "China", "United Kingdom", "Brazil", "Russia", "Japan", "Germany", "France", "South Korea"]
+# copylist = country_list.copy()
+# copylist = list(country_list)
+# print(copylist)
+# x = country_list.count("India")
+# x = country_list.index("China")
+# print(x)
+
+# Python - Join Lists
+list1 = ["1","2","3"]
+list2 = ["a","b","c",]
+# slist = list1+list2  # method 1
+# print(slist)
+# for x in list2:
+#     list1.append(x)       # method 2
+# print(list1)
+
+# list1.extend(list2)     # method 3
+# print(list1)
