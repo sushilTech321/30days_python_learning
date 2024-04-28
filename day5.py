@@ -1,87 +1,86 @@
-# Loop Through a List
-thislist = ["apple", "banana", "cherry","watermelon","mango","cherry"]
-# for x in thislist:
-#   print(x)
+"""
+    Python Tuples
+    1. A tuple is a collection which is ordered and unchangeable and allow duplicates.
+    2. Tuples are written with round brackets.
+"""
+thistuple = ("apple", "banana", "cherry","grapes","watermelon")
+# thistuple = tuple(("apple", "banana", "cherry", 1, 3, True))
+# thistuple = ("apple",)
+# print(thistuple)
+# print(len(thistuple))
+# print(type(thistuple))
 
 
-# Loop Through the Index Numbers
-# Use the range() and len() functions to create a suitable iterable.
-thislist = ["car", "bus", "bike","van","taxi","truck"]
-# for i in range(len(thislist)):
-#   print(thislist[i])
+# Python - Access Tuple Items
+# print(thistuple[2])
+# print(thistuple[-2])
+# print(thistuple[2:5])
+# print(thistuple[2:])
+# print(thistuple[-4:-1])
+
+#check if exits item
+# if ("apple" in thistuple):
+#     print("Yes")
+# else:
+#     print("No")
 
 
-# Using a While Loop, use len() function to determine the length of the list, then start at 0 and 
-# loop your way through the list items by referring to their indexes.
-thislist = ["apple", "banana", "cherry"]
+# Python - Update Tuples
+# convert the tuple into a list, change the list, and convert the list back into a tuple.
+
+# mytuple = list(thistuple)
+# mytuple[0] = "mango"
+# mytuple.insert(2,"mango")
+# mytuple.append("blackberry")
+# thistuple = tuple(mytuple)
+# print(mytuple)
+# print(thistuple)
+
+
+# Remove Items
+# mytuple = list(thistuple)
+# mytuple.remove("watermelon")
+# mytuple.pop()
+# mytuple.clear()
+# del mytuple
+# print(mytuple)
+
+# thistuple = tuple(mytuple)
+# print(thistuple)
+
+
+# Python - Unpack Tuples
+(green, yellow, red, blue, gray) = thistuple
+# print(green)
+# print(yellow)
+# print(red)
+# print(blue)
+# print(gray)
+
+# Using Asterisk*
+# (green, *yellow, red) = thistuple
+# print(green)
+# print(yellow)
+# print(red)
+
+
+# Python - Loop Tuples
+# for x in thistuple:
+#     print(x)
+
+# for x in range(len(thistuple)):
+#     print(thistuple[x])
+
 # i = 0
-# while i < len(thislist):
-#   print(thislist[i])
-#   i = i + 1
+# while i < len(thistuple):
+#     print(thistuple[i])
+#     i += 1
 
 
-# Looping Using List Comprehension
-thislist = ["apple", "banana", "cherry"]
-# [print(a) for a in thislist]
-
-
-# List Comprehension ->  it offers a shorter syntax
-# Example: Based on a list of fruits, want a new list, containing only the fruits with the letter "a" in the name.
-
-# Without list comprehension
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-# newlist = []
-# for x in fruits:
-#   if "a" in x:
-#     newlist.append(x)
-
-# print(newlist)
-
-# With list comprehension
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-# newlist = [x for x in fruits if "e" in x]
-# newlist = [x for x in fruits if x!="kiwi" and x!= "mango"]
-# newlist = [x for x in fruits]
-# newlist = [x for x in range(10)]      #use the range()
-# newlist = [x for x in range(10) if x <= 5]    #with a condition:
-# newlist = [x.upper() for x in fruits]        #new list to upper case:
-# newlist = [x if x != "banana" else "orange" for x in fruits]       # Return "orange" instead of "banana":
-# print(newlist)
-
-
-# The Syntax
-# newlist = [expression for item in iterable if condition == True]
-
-
-# Python - Sort Lists
-# Sort List Alphanumerically -> sort() method that will sort the list alphanumerically, ascending, by default
-
-thislist = ["Orange", "mango", "apple", "kiwi", "pineapple", "Banana"]
-# thislist = [100, 50, 65, 82, 23]
-# thislist.sort()         
-# thislist.sort(reverse = True)  # Sort Descending
-# thislist.sort(key = str.lower)         
-# thislist.reverse()
-# print(thislist)
-
-
-# Python - Copy Lists
-country_list = ["India", "United States", "China", "United Kingdom", "Brazil", "Russia", "Japan", "Germany", "France", "South Korea"]
-# copylist = country_list.copy()
-# copylist = list(country_list)
-# print(copylist)
-# x = country_list.count("India")
-# x = country_list.index("China")
-# print(x)
-
-# Python - Join Lists
-list1 = ["1","2","3"]
-list2 = ["a","b","c",]
-# slist = list1+list2  # method 1
-# print(slist)
-# for x in list2:
-#     list1.append(x)       # method 2
-# print(list1)
-
-# list1.extend(list2)     # method 3
-# print(list1)
+tuple1 = ("a","b","c","a")
+tuple2 = (1,2,3)
+# tuple3 = tuple1 + tuple2
+# tuple3 = tuple1 * 4
+# tuple3 = tuple1.count("a")
+tuple3 = tuple1.index("a")
+print(tuple3)

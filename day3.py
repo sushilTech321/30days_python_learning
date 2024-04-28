@@ -8,5 +8,5 @@ thislist = ["apple", "banana", "cherry"]
 # thislist.remove("banana")
 # thislist.pop(1)
 # del thislist[0]
-thislist.clear()
+# thislist.clear()
 print(thislist)
