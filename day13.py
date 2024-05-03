@@ -38,8 +38,5 @@ for x in (c,b,p):
     # print(x)
     x.move()
 
-def myfunc():
-    print("hello")
-myfunc()
 
 
