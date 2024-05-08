@@ -1,3 +1,5 @@
+import os
+
 # Python File handling
 
 """
@@ -45,7 +47,7 @@
 # f = open("myfile.txt", "x")
 # f = open("myfile.txt", "w")
 
-import os
+
 if os.path.exists("myfile.txt"):
   os.remove("myfile.txt")
 else:
